@@ -17,11 +17,16 @@ elForm.addEventListener('submit', function(e){
         elScore.textContent = 'yiqilding'
     }else if(elInput1.value < 60 && elInput2.value > 5.5 && elInput3.value == 'yoq'){
         elScore.textContent = 'yiqilding'
+    }else if(elInput1.value > 60 && elInput2.value > 5.5 && elInput3.value == 'yoq'){
+        elScore.textContent = 'Sen oqishga kirding'
     }else if(elInput1.value > 60 && elInput2.value < 5.5 && elInput3.value == 'bor'){
         elScore.textContent = 'Tankdan 500$ olib kel'
     }else if(elInput1.value < 60 && elInput2.value > 5.5 && elInput3.value == 'bor'){
         elScore.textContent = 'Tankdan 500$ olib kel'
-    }else{
+    }else if(elInput1.value > 60 && elInput2.value > 5.5 && elInput3.value == 'bor'){
+        elScore.textContent = 'Sen oqishga kirding'
+    }
+    else{
         elScore.textContent = 'qandaydir xato yuz berdi'
     }
 })
